@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Desarrollo Web - Alejandro Durando</title>
+    <meta name="description" content="Propuesta profesional de desarrollo web por Alejandro Durando.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons para iconografía profesional -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ES Module Shims: Import maps polyfill for Spline Web Component -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.72/build/spline-viewer.js"></script>
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-follower"></div>
+
+    <!-- Professional Background: Subtle Grid + Ambient Glow -->
+    <div class="bg-grid"></div>
+
+    <!-- Navegación Personalizada Superpuesta -->
+    <nav class="custom-nav fade-in">
+        <div class="nav-brand">
+            <div class="logo-icon"></div>
+            <span>Alejandro Durando</span>
+        </div>
+        <div class="nav-links">
+            <a href="#cronograma">Cronograma</a>
+            <a href="#inversion">Inversión</a>
+            <a href="#mantenimiento">Mantenimiento</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="spline-container fade-in">
+            <spline-viewer url="https://prod.spline.design/Dh5prAdFV8VD63re/scene.splinecode"
+                events-target="global"></spline-viewer>
+            <!-- Overlay oscuro para oscurecer la parte inferior del 3D y que el texto no se encime con el diseño luminoso -->
+            <div class="spline-overlay"></div>
+        </div>
+
+        <div class="hero-content reveal">
+            <h1 class="hero-title">PROPUESTA DE TRABAJO</h1>
+            <h2 class="hero-title-sub">diseño de páginas web y automatizaciones</h2>
+            <p class="hero-subtitle">Solución digital a medida para potenciar tu presencia online</p>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator fade-in">
+            <span class="scroll-text">Desliza para ver la propuesta</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robot Spline Following Cursor for the Proposal Section -->
+    <div class="robot-bg-container fade-in">
+        <spline-viewer url="https://prod.spline.design/cVwpsqs02jLbuqqr/scene.splinecode"
+            events-target="global"></spline-viewer>
+    </div>
+
+    <!-- Contenedor Principal (Empieza debajo del hero animado) -->
+    <main class="proposal-container" id="proposal-document">
+
+        <!-- Espacio inicial para la propuesta -->
+        <div class="pt-8"></div>
+
+        <!-- Section 1: Timeline -->
+        <section id="cronograma" class="proposal-section reveal">
+            <div class="section-header">
+                <div class="icon-box icon-primary">
+                    <i class="ph-duotone ph-calendar-check"></i>
+                </div>
+                <h2>Cronograma de Trabajo y Entregas</h2>
+            </div>
+            <p class="section-subtitle">Plazo estimado para la ejecución completa: <strong class="text-highlight">10 a
+                    12 días limpios</strong></p>
+
+            <div class="timeline">
+
+                <!-- Stage 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"><i class="ph-duotone ph-layout"></i></div>
+                    <div class="timeline-content card-hover">
+                        <div class="timeline-header">
+                            <h3>Estructura y Maquetado Base</h3>
+                            <span class="tag tag-primary"><i class="ph-duotone ph-clock"></i> Días 1 al 4</span>
+                        </div>
+                        <p>Configuración del entorno de trabajo, hosting y dominio. Traducción del diseño a código base
+                            y estructuración de las secciones principales del sitio.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"><i class="ph-duotone ph-devices"></i></div>
+                    <div class="timeline-content card-hover">
+                        <div class="timeline-header">
+                            <h3>Funcionalidad y Adaptabilidad</h3>
+                            <span class="tag tag-primary"><i class="ph-duotone ph-clock"></i> Días 5 al 8</span>
+                        </div>
+                        <p>Desarrollo de diseño responsivo para asegurar la correcta visualización en dispositivos
+                            móviles y tablets. Programación de funcionalidades interactivas (formularios, menús) y carga
+                            del contenido definitivo.</p>
+                    </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"><i class="ph-duotone ph-magnifying-glass-plus"></i></div>
+                    <div class="timeline-content card-hover">
+                        <div class="timeline-header">
+                            <h3>Revisión y Ajustes Finales</h3>
+                            <span class="tag tag-primary"><i class="ph-duotone ph-clock"></i> Días 9 y 10</span>
+                        </div>
+                        <p>Presentación del sitio funcional en un entorno de prueba para control de calidad. Aplicación
+                            de ajustes finales y correcciones. Entrega final para proyectos de complejidad estándar (Día
+                            10).</p>
+                    </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker"><i class="ph-duotone ph-rocket-launch"></i></div>
+                    <div class="timeline-content card-hover">
+                        <div class="timeline-header">
+                            <h3>Integraciones Avanzadas (Si aplica)</h3>
+                            <span class="tag tag-primary"><i class="ph-duotone ph-clock"></i> Días 11 y 12</span>
+                        </div>
+                        <p>Implementación de requerimientos técnicos avanzados, como funciones a medida o conexión con
+                            herramientas de terceros. Migración y despliegue final a producción (Día 12).</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="alert alert-warning reveal">
+                <div class="alert-icon">
+                    <i class="ph-duotone ph-warning-circle"></i>
+                </div>
+                <div class="alert-content">
+                    <strong>Nota importante:</strong> Para garantizar el cumplimiento de los plazos, el cronograma de
+                    desarrollo comienza a correr (Día 1) únicamente a partir de la recepción del diseño final aprobado y
+                    la totalidad de los recursos necesarios.
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Investment -->
+        <section id="inversion" class="proposal-section reveal">
+            <div class="section-header">
+                <div class="icon-box icon-success">
+                    <i class="ph-duotone ph-currency-circle-dollar"></i>
+                </div>
+                <h2>Esquema de Inversión</h2>
+            </div>
+
+            <p class="section-subtitle">El valor del desarrollo se define evaluando previamente sus requerimientos
+                técnicos y el nivel de complejidad del diseño entregado.</p>
+
+            <div class="investment-card pulse-glow">
+                <i class="ph-duotone ph-diamond decoration-icon"></i>
+                <div class="investment-content">
+                    <span class="investment-label">Rango de Inversión Estimado</span>
+                    <div class="price-display">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">650k</span>
+                        <span class="price-separator">-</span>
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">1M</span>
+                    </div>
+                    <div class="price-suffix">ARS por proyecto finalizado</div>
+                </div>
+                <div class="investment-decoration"></div>
+            </div>
+
+            <div class="info-box reveal">
+                <div class="info-header">
+                    <i class="ph-duotone ph-check-circle text-success"></i>
+                    <h4>Gastos incluidos en la propuesta</h4>
+                </div>
+                <p>Dentro de los valores presupuestados ya se encuentran contemplados los gastos de terceros
+                    correspondientes a la contratación del servidor (hosting) de alta velocidad y la gestión/registro
+                    del dominio web por el primer año.</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Maintenance -->
+        <section id="mantenimiento" class="proposal-section reveal">
+            <div class="section-header">
+                <div class="icon-box icon-accent">
+                    <i class="ph-duotone ph-shield-check"></i>
+                </div>
+                <h2>Planes de Mantenimiento <span class="text-light">(Opcional)</span></h2>
+            </div>
+
+            <p class="section-subtitle">Garantiza el correcto funcionamiento, seguridad y vigencia tecnológica de tu
+                sitio web post-lanzamiento.</p>
+
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card card-hover">
+                    <div class="pricing-header">
+                        <i class="ph-duotone ph-shield-star pricing-icon"></i>
+                        <h3>Mantenimiento Básico</h3>
+                        <div class="pricing-price">
+                            <span>$10k - $15k</span>
+                            <span class="pricing-period">ARS / mes</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <i class="ph-duotone ph-check-circle text-muted"></i>
+                            <span>Monitoreo de tiempo de actividad (uptime) 24/7.</span>
+                        </li>
+                        <li>
+                            <i class="ph-duotone ph-check-circle text-muted"></i>
+                            <span>Actualizaciones críticas del sistema y prevención de vulnerabilidades.</span>
+                        </li>
+                        <li>
+                            <i class="ph-duotone ph-check-circle text-muted"></i>
+                            <span>Generación de respaldos (backups) de seguridad mensuales.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card card-hover current focus-glow">
+                    <div class="popular-badge">
+                        <i class="ph-duotone ph-star"></i> Recomendado
+                    </div>
+                    <div class="pricing-header">
+                        <i class="ph-duotone ph-magic-wand pricing-icon text-primary"></i>
+                        <h3>Mantenimiento Integral</h3>
+                        <div class="pricing-price text-primary">
+                            <span>$20k - $30k</span>
+                            <span class="pricing-period">ARS / mes</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>
+                            <i class="ph-duotone ph-check-circle text-primary"></i>
+                            <span class="font-semibold text-white">Todo lo del Mantenimiento Básico garantizado.</span>
+                        </li>
+                        <li>
+                            <i class="ph-duotone ph-check-circle text-primary"></i>
+                            <span>Gestión de copias de seguridad <strong>semanales</strong> en la nube.</span>
+                        </li>
+                        <li>
+                            <i class="ph-duotone ph-plus text-primary"></i>
+                            <span>Bolsa de horas para pequeñas actualizaciones (reemplazo de imágenes, textos,
+                                etc).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contacto" class="proposal-footer reveal">
+            <div class="footer-line"></div>
+            <p>Documento digital interactivo generado para propuesta comercial confidencial.</p>
+            <div class="footer-brand">
+                <i class="ph-duotone ph-code"></i>
+                <span>Alejandro Durando &copy; 2026</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
