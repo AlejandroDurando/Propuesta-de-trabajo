@@ -84,6 +84,7 @@ spline-viewer {
     /* Under the core dot */
     backdrop-filter: blur(4px);
     box-shadow: 0 0 15px var(--color-primary-glow);
+    will-change: transform;
 }
 
 #cursor-follower {
@@ -98,6 +99,7 @@ spline-viewer {
     z-index: 9999;
     /* Core dot on top */
     mix-blend-mode: difference;
+    will-change: transform;
 }
 
 /* Restore cursor for interactive elements if preferred, or keep custom */

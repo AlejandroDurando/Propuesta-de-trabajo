@@ -71,7 +71,35 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     animateCursors();
 
-    // Aggressive Spline Logo Removal
+    // Intersection Observer to optimize Spline Performance
+    const splineObserverOptions = {
+        root: null,
+        threshold: 0.01 // Trigger as soon as even 1% is visible
+    };
+
+    const splineObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const viewer = entry.target.querySelector('spline-viewer');
+            if (viewer) {
+                if (entry.isIntersecting) {
+                    // In viewport: let it render
+                    viewer.style.visibility = 'visible';
+                    viewer.style.pointerEvents = 'auto';
+                } else {
+                    // Out of viewport: hide it to stop engine loops
+                    viewer.style.visibility = 'hidden';
+                    viewer.style.pointerEvents = 'none';
+                }
+            }
+        });
+    }, splineObserverOptions);
+
+    const heroTarget = document.getElementById('hero-section');
+    const robotTarget = document.getElementById('robot-container');
+    if (heroTarget) splineObserver.observe(heroTarget);
+    if (robotTarget) splineObserver.observe(robotTarget);
+
+    // Aggressive Spline Logo Removal... (rest of the code)
     const forceRemoveLogo = () => {
         const viewers = document.querySelectorAll('spline-viewer');
         viewers.forEach(viewer => {
